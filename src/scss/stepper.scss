@@ -38,6 +38,28 @@
             @include fleX(column);
             gap: 10px;
 
+        .step-card {
+            position: relative;
+                width: 100%; // 
+
+                img{
+                    width: 100%; // Adjust the width of the image as needed
+                        display: block;
+                }
+
+                .title {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white; // Set the text color as needed
+                    font-size: 18px; // Set the font size as needed
+                    text-align: center;
+                    z-index: 1;
+                    font-size: 18px;
+                    width: 100%;
+                }
+        }
             .title {
                 font-size: $font-size-base;
                 font-weight: 500;

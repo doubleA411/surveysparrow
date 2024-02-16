@@ -52,6 +52,12 @@ import voc6 from "./assets/VoC/6.png";
 import voc7 from "./assets/VoC/7.png";
 
 
+import vc from './assets/VoC/Vector.png';
+import vc2 from './assets/VoC/Vector-1.png';
+import vc3 from './assets/VoC/Vector-2.png';
+import vc4 from './assets/VoC/Vector-3.png';
+
+
 
 
 
@@ -98,18 +104,25 @@ export const card2 = [
   {
     num: "I",
     title: "Set the Objective",
+    img:vc
   },
   {
     num: "II",
     title: "Gather Data",
+    img:vc2
+
   },
   {
     num: "III",
     title: "Interpret Results",
+    img:vc3
+
   },
   {
     num: "IV",
     title: "Enforce Measures",
+    img:vc4
+
   },
 ];
 
