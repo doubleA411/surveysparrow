@@ -1,0 +1,44 @@
+$primary-color: #FFFFFF;
+$secondary-color : #30BF91;
+$text-color: #0D1B1E;
+$grey : #33393F;
+$blue : #F5FDFF;
+
+
+$breakpoint-mobile: 768px;
+
+// Define font sizes with a single variable per element type
+$font-size-heading: 36px;
+$font-size-base : 18px;
+$font-size-paragraph: 16px;
+$font-size-small: 14px;
+$font-size-micro: 12px;
+
+// Modify values conditionally within media queries
+@media (max-width: $breakpoint-mobile) {
+    $font-size-heading: 22px;
+    $font-size-base: 16px;
+    $font-size-paragraph: 14px;
+    $font-size-small: 12px;
+    $font-size-micro: 10px;
+}
+
+
+@mixin fleX($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin font($size, $weight, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin mobile {
+    @media (max-width : 768px) {
+        @content;
+    }
+}
+
+// 18,20,36,12,16,14,56,22,28,48,24,26

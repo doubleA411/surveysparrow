@@ -1,0 +1,77 @@
+@import './variables';
+
+
+.header {
+    font-size: $font-size-small;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5% 0;
+
+    @include mobile {
+        // visibility: hidden;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .route {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+        }
+
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .lang {
+            display: flex;
+            align-items: center;
+            gap:10px
+        }
+
+        .signup-btn {
+            color: $primary-color;
+            width: 87px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background-color: $secondary-color;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: $font-size-micro;
+        /* Adapt font size */
+        padding: 10px 2%;
+        /* Adjust padding */
+    }
+
+    .header-left {
+        gap: 20px;
+        /* Narrow gap for smaller screens */
+    }
+
+    .header-right {
+        gap: 10px;
+        /* Smaller gap for buttons */
+    }
+
+    .signup-btn {
+        width: 70px;
+        /* Reduce button width */
+    }
+}

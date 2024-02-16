@@ -1,0 +1,46 @@
+@import './variables';
+
+.purpose {
+    @include fleX(column);
+    align-items: center;
+    margin: 10% 0;
+    height: 10%;
+    gap: 50px;
+    justify-content: space-between;
+    .purpose-text {
+        font-size: $font-size-base;
+        line-height: 32px;
+        font-weight: 400;
+        width: 80%;
+        text-align: center ;
+        margin: 0 auto;
+    }
+    .accordian {
+    text-align: center;
+    @include fleX(column);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+
+    hr {
+        width: 80%;
+        opacity: 0.3;
+        margin: 0;
+    }
+    .desc {
+        font-size: font-size-paragraph;
+        line-height: 30px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    }
+
+}

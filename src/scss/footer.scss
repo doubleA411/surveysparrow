@@ -1,0 +1,72 @@
+@import './resets';
+@import './variables';
+
+.footer {
+    margin: 10% 0;
+    @include fleX(row);
+    align-items: start;
+    text-align: start;
+    justify-content: space-evenly;
+
+    @include mobile {
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: start;
+        gap: 40px;
+        padding: 10%
+    }
+
+    .child {
+        @include fleX(column);
+        align-items: start;
+        gap: 30px;
+
+        p {
+            @include font($font-size-base,500,22px)
+        }
+
+        ul {
+            padding: 0;
+        list-style: none;
+        @include fleX(column);
+        align-items: start;
+        gap: 5px;
+            @include font($font-size-small, 300, 28px);
+            opacity: 0.5;
+        }
+    }
+
+    .connect {
+        @include fleX(column);
+        align-items: start;
+        // justify-content: space-between;
+        gap: 40px;
+
+        .contact {
+            @include fleX(column);
+            gap: 20px;
+            align-items: start;
+
+            .icons {
+                @include fleX(row);
+                align-items: center;
+                gap: 10px;
+
+            }
+
+            .phone {
+                @include fleX(row);
+                align-items: center;
+                gap: 20px;
+                @include font($font-size-small,300,12px);
+
+                p {
+                    opacity: 0.5;
+                }
+            }
+
+        }
+    }
+
+}
+

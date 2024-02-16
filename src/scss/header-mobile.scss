@@ -1,0 +1,39 @@
+@import './variables';
+
+.topnav {
+    overflow: hidden;
+    background-color: $text-color;
+    position: relative;
+    margin-bottom: 10%;
+
+    #myLinks {
+        display: none;
+    }
+
+    a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+
+        &:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    }
+
+    .icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 15px;
+    }
+
+    .active {
+        background-color:$secondary-color ;
+        color: white;
+    }
+}

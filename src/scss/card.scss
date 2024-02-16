@@ -1,0 +1,47 @@
+@import './variables';
+
+.card-container {
+    color: $primary-color;
+    background-color: $grey;
+    // height: 304px;
+    padding: 4%;
+    gap: 20px;
+    display: flex;
+    margin: 0 5% 9%;
+    justify-content: space-evenly;
+
+    @include mobile {
+        flex-wrap: wrap;
+        gap: 20px;
+        // height: 1200px
+    }
+    // margin-bottom: 9%;
+
+    .card {
+        @include fleX(column);
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        justify-content: space-between;
+
+        .desc {
+            font-size: $font-size-base;
+            width: 200px;
+
+        }
+
+        .circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            background-color: $secondary-color;
+            @include fleX(row);
+            align-items: center;
+            justify-content: center;
+        }
+        .title {
+            font-size: 20px;
+            font-weight:700;
+        }
+    }
+}

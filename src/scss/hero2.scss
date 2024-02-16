@@ -1,0 +1,32 @@
+@import './variables';
+
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 12%;
+    gap: 30px;
+    margin: 8% 0;
+
+    .title {
+        font-size: $font-size-heading;
+        font-weight: 700;
+
+                    @include mobile {
+                            font-size: 22px;
+                            line-height: 28px;
+                        }
+    }
+    .desc {
+        font-size: $font-size-base;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    .read {
+        font-size: $font-size-base;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}

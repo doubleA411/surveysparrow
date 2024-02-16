@@ -1,0 +1,106 @@
+@import './variables';
+@import './resets';
+
+
+.review {
+    margin-top: 8%;
+    @include fleX(column);
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    @include mobile {
+        margin: 10%;
+        gap: 10px
+    }
+
+    .title {
+        @include font($font-size-heading,700,56px);
+                    @include mobile {
+                            font-size: 22px;
+                            line-height: 28px;
+                        }
+    }
+
+    .sub {
+        @include font($font-size-base, 400, 32px);
+    }
+
+    .quotes {
+        @include fleX(column);
+        gap: 40px;
+
+        .quote {
+            @include font(22px,300,38px);
+            margin: 0 22%;
+            opacity: 0.6;
+
+            @include mobile {
+                margin: 2%;
+
+            }
+        }
+    }
+
+    .face-mobile {
+        @include fleX(column);
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: 5%;
+
+        .name {
+            @include font(26px, 500, 32px)
+        }
+                 .desg {
+                     @include font(18px, 300, 16px);
+                     opacity: 0.6;
+                 }
+    }
+
+
+
+    .medals {
+        margin: 8%;
+        @include fleX(row);
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 150px;
+
+        @include mobile {
+            flex-direction: column;
+            img {
+                width: 50%
+            }
+        }
+    }
+
+    .brands {
+        @include fleX(row);
+        margin:  10%;
+        flex-wrap:wrap;
+        align-items: center;
+        gap:100px;
+        justify-content: space-evenly;
+    }
+    .face {
+        margin-bottom:-70px;
+        width: 18%;
+        .name {
+            @include font(26px,500,56px)
+        }
+        .desg {
+            @include font($font-size-micro, 300, 16px);
+            opacity: 0.6;
+        }
+        
+    }
+
+    .faces {
+        margin: 10% 0;;
+        @include fleX(row);
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+}

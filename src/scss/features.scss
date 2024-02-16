@@ -1,0 +1,57 @@
+@import './variables';
+@import './resets';
+
+.features {
+    margin: 10% 0;
+    @include fleX(row);
+    @include mobile {
+        flex-direction: column;
+    }
+    padding: 0 5%;
+    justify-content: space-between;
+    gap: 5%;
+
+    .features-right {
+        img {
+            width: 100%;
+            @include mobile {
+                width: 80%
+            }
+        }
+    }
+    .features-left {
+        @include fleX(row);
+        flex-wrap: wrap;
+        row-gap: 0;
+        gap: 10%;
+        @include mobile {
+            align-items: center;
+            justify-content: center;
+            gap: 20px
+        }
+        
+
+        .feature {
+
+            @include fleX(column);
+            align-items: center;
+            gap: 5px;
+
+            .circle {
+                width:48px ;
+                height: 48px;
+                border-radius: 100%;
+                background-color: $text-color;
+                @include fleX(row);
+                align-items: center;
+                justify-content: center;
+
+                @include mobile {
+                    width: 40px;
+                    height: 40px;
+                }
+
+            }
+        }
+    }
+}

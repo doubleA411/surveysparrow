@@ -1,0 +1,48 @@
+@import "./resets";
+@import "./variables";
+
+
+.view {
+    @include fleX(column);
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    width:48%;
+    margin: 0px;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    text-align: start;
+
+    .desc {
+            @include font($font-size-base, 400, 32px);
+            margin-left: 65px
+    }
+
+    .title {
+        @include fleX(row);
+        align-items: center;
+        gap: 20px;
+
+        p {
+            @include font(24px,700,56px);
+            @include mobile {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+        }
+
+        .circle {
+            width: 48px;
+            height: 48px;
+            background-color: $secondary-color;
+            border-radius: 100%;
+            @include fleX(row);
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}

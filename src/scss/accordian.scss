@@ -1,0 +1,70 @@
+@import './variables';
+@import './resets';
+
+
+.accordion {
+    background-color: $primary-color;
+    color: $text-color;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    width: 80%;
+    
+    font-size: 22px;
+        font-weight: 600;
+        line-height: 32px;
+
+
+    &:hover,
+    &.active {
+        background-color: $primary-color;
+    }
+
+        &:after {
+            content: '\02795';
+            /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+    
+        .active:after {
+            content: "\2796";
+            /* Unicode character for "minus" sign (-) */
+        }
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+
+
+.panel {
+    padding: 20px 18px;
+    background-color: white;
+    // max-height: 0;
+    width: 50%;
+    @include mobile {
+        width: 100%;
+    }
+    margin: 0 auto;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: $font-size-paragraph;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    @include fleX(row);
+    align-items: center;
+    justify-content: center;
+}

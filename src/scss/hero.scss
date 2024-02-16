@@ -1,0 +1,121 @@
+@import './resets';
+@import './variables';
+
+.hero {
+    padding: 8% 5% 0;
+    // margin-top: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 100px;
+    }
+
+    .hero-right {
+        img {
+            width: 100%;
+        }
+    }
+
+    .hero-left {
+        width: 40%;
+        height: 356px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+        @include mobile {
+                width: 90%;
+        
+            }
+        
+        .title {
+            margin: 0;
+            font-weight: 700;
+            font-size: 56px;
+
+            @include mobile {
+                font-size: 36px;
+                
+            }
+        }
+
+        .subtitle {
+            margin: 0;
+            font-weight: 500;
+            font-size : 18px
+        }
+
+        .cta {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .cta-first {
+                display: flex;
+                @include mobile {
+                    @include fleX(column);
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 18px;
+                                    }
+                gap: 3px;
+                input {
+                    &::placeholder {
+                        font-size: $font-size-paragraph;
+                        font-weight: 300;
+                    }
+                    border-radius: 5px;
+                    padding: 15px;
+                    height: 50px;
+                    width: 268px;
+                    border: 1px solid rgba(128, 128, 128, 0.159);
+                }
+
+                button {
+                    color: $primary-color;
+                    background-color: $secondary-color;
+                    border-radius: 5px;
+                    border: 0;
+                    font-size: $font-size-base;
+                    padding: 0 20px;
+
+                    @include mobile {
+                        font-size: 12px;
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .cta-last {
+                display: flex;
+                gap: 10px;
+                align-items: baseline;
+                // width: 100%;
+
+                @include mobile {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                p {
+                    font-size: $font-size-micro;
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                }
+
+                .demo {
+                    font-size: $font-size-small;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+}

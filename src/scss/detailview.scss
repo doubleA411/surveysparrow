@@ -1,0 +1,64 @@
+@import './variables';
+@import './resets';
+
+@mixin font($size, $weight, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height; 
+}
+
+
+
+.view-white {
+
+    @include mobile {
+            flex-direction: column;
+        }
+    @include fleX(row);
+    margin-right: 5%;
+    margin-left: 5%;
+    gap: 120px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15%;
+
+    .image {
+       img {
+           @include mobile {
+            width: 100%
+           }
+    } 
+        
+    }
+    .content {
+        @include fleX(column);
+        gap: 30px;
+        align-items: start;
+        text-align: start;
+
+        .title {
+            font-size: $font-size-heading;
+            line-height: 46px;
+            font-weight: 700;
+            @include mobile {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+        }
+
+        .desc {
+            @include font($font-size-paragraph,400,30px);
+            
+        }
+    }
+
+}
+
+.view-reverse {
+    @extend .view-white;
+    flex-direction: row-reverse;
+
+    @include mobile{
+        flex-direction: column;
+    }
+}

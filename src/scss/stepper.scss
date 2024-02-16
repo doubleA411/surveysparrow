@@ -1,0 +1,69 @@
+@import './variables';
+
+.stepper-cont {
+
+    @include fleX(column);
+    // width: 1252px;
+    gap: 30px;
+    margin: 2% 10%;
+    align-items: center;
+    background-color: $primary-color;
+    // border :1px solid black;
+    border-radius: 1%;
+    // margin: 2% auto;
+    padding: 5% 10%;
+    // gap: 10%;
+    justify-content: space-between;
+
+    .end-text {
+        font-size: $font-size-base;
+        line-height: 32px;
+        font-weight: 400;
+        text-align: center; 
+        }
+    .steppers {
+        @include fleX(row);
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+        }
+    
+        .stepper {
+            @include fleX(column);
+            gap: 10px;
+
+            .title {
+                font-size: $font-size-base;
+                font-weight: 500;
+
+                @include mobile {
+                    font-size: 16px;
+                }
+            }
+    
+            .num {
+                color: $primary-color;
+                background-color: $text-color;
+                width: 45px;
+                @include fleX(row);
+                height: 45px;
+                border-radius: 100%;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+
+                @include mobile {
+                    font-size: 12px;
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}
