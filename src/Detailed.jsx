@@ -1,5 +1,5 @@
 import React from 'react'
-import './scss/detailed.scss';
+import './scss/_detailed.scss';
 import DetailView from './DetailView';
 import { detials } from './config';
 

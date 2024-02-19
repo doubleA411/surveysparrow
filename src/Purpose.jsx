@@ -1,5 +1,5 @@
 import React from 'react'
-import './scss/purpose.scss'
+import './scss/_purpose.scss'
 import SignUpCard from './SignUpCard';
 import Accordian from './Accordian';
 import { accordian } from './config';

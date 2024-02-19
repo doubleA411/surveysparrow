@@ -15,10 +15,22 @@ import Footer from "./Footer";
 
 import './scss/app.scss';
 import HeaderMobile from "./HeaderMobile";
+import { useEffect, useState } from "react";
 
 
 function App() {
-  const isMobile = window.innerWidth <= 768;
+
+  const [ isMobile, setIsMobile ] = useState(window.innerWidth <= 1000);
+
+  function checkMobile() {
+   setIsMobile(window.innerWidth <=1000);
+  }
+
+  useEffect(() => {
+    checkMobile();
+    window.addEventListener('resize',checkMobile);
+
+  },[])
 
   return (
     <div className="app">
@@ -33,12 +45,12 @@ function App() {
         <Features />
       </div>
       <Purpose />
-      <SignUpCard />
+      <SignUpCard bottom ={true} />
 
       <Detailed />
       <Grey />
-      <SignUpCard />
-      <Review />
+      <SignUpCard bottom ={false} />
+      <Review isMobile = {isMobile} />
       <FooterCard />
       <Footer />
 

@@ -2,7 +2,7 @@ import React from 'react'
 import SS from './assets/SS'
 import { routes } from './config'
 
-import './scss/header-mobile.scss';
+import './scss/_header-mobile.scss';
 
 function HeaderMobile() {
      const toggleMenu = () => {

@@ -14,6 +14,11 @@
     @include mobile {
             flex-direction: column;
         }
+
+    @include tablet {
+        gap: 70px;
+
+    }
     @include fleX(row);
     margin-right: 5%;
     margin-left: 5%;
@@ -26,6 +31,9 @@
        img {
            @include mobile {
             width: 100%
+           }
+           @include tablet {
+            width: 300px
            }
     } 
         
@@ -44,10 +52,16 @@
                     font-size: 22px;
                     line-height: 28px;
                 }
+                                @include tablet {
+                                    font-size: 22px;
+                                    line-height: 28px;
+                                }
+        
         }
 
         .desc {
             @include font($font-size-paragraph,400,30px);
+            
             
         }
     }

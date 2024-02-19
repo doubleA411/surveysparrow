@@ -1,5 +1,5 @@
 import React from 'react'
-import './scss/detailview.scss';
+import './scss/_detailview.scss';
 
 function DetailView(props) {
   return (

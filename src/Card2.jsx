@@ -1,5 +1,5 @@
 import React from 'react'
-import './scss/card2.scss'
+import './scss/_card2.scss'
 
 function Card2() {
   return (

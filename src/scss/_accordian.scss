@@ -13,39 +13,29 @@
     outline: none;
     transition: 0.4s;
     width: 80%;
-    
-    font-size: 22px;
-        font-weight: 600;
-        line-height: 32px;
 
+    .title {
+        @include fleX(row);
+        justify-content: space-between;
+         p {
+            font-size: 22px;
+                font-weight: 600;
+                line-height: 32px;
 
-    &:hover,
-    &.active {
-        background-color: $primary-color;
+                @include tablet {
+                    font-size: 18px;
+                }
+                                 @include mobile {
+                                     font-size: 14px;
+                                 }
+         }
     }
-
-        &:after {
-            content: '\02795';
-            /* Unicode character for "plus" sign (+) */
-            font-size: 13px;
-            color: #777;
-            float: right;
-            margin-left: 5px;
-        }
     
-        .active:after {
-            content: "\2796";
-            /* Unicode character for "minus" sign (-) */
-        }
+
+
+  
 }
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
 
 
 

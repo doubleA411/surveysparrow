@@ -2,7 +2,7 @@ import React from 'react'
 import { cta } from './config';
 
 import banner from './assets/Banner 1.png'
-import './scss/hero.scss'
+import './scss/_hero.scss'
 
 function Hero() {
   return (

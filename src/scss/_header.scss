@@ -18,6 +18,10 @@
         display: flex;
         align-items: center;
         gap: 40px;
+        @include tablet {
+            font-size: 10px;
+            gap: 20px;
+        }
         .route {
             display: flex;
             align-items: center;
@@ -31,6 +35,10 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        @include tablet {
+                font-size: 10px;
+                gap: 20px;
+            }
 
         .lang {
             display: flex;

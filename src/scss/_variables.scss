@@ -41,4 +41,10 @@ $font-size-micro: 12px;
     }
 }
 
+@mixin tablet {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
 // 18,20,36,12,16,14,56,22,28,48,24,26

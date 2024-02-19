@@ -1,5 +1,5 @@
 import React from 'react'
-import './scss/grey.scss';
+import './scss/_grey.scss';
 import { grey } from './config';
 import GreyView from './GreyView';
 import SignUpCard from './SignUpCard';

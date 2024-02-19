@@ -1,5 +1,5 @@
 import React from 'react'
-import "./scss/grey-view.scss"
+import "./scss/_grey-view.scss"
 
 function GreyView(props) {
   return (

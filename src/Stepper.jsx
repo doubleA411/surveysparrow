@@ -1,6 +1,6 @@
 import React from 'react'
 import { card2 } from "./config";
-import './scss/stepper.scss'
+import './scss/_stepper.scss'
 
 
 function Stepper() {

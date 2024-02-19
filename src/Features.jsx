@@ -1,5 +1,5 @@
 import React from 'react';
-import './scss/features.scss';
+import './scss/_features.scss';
 import { features } from './config';
 import banner from './assets/undraw_review_fkgn 1.png'
 

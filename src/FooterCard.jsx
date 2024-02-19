@@ -1,5 +1,5 @@
 import React from 'react'
-import "./scss/footer-card.scss";
+import "./scss/_footer-card.scss";
 
 
 function FooterCard() {

@@ -1,6 +1,6 @@
 import React from 'react'
-import './scss/card.scss'
-import { cards } from './config'
+import './scss/_card.scss';
+import { cards } from './config';
 
 function Card() {
   return (

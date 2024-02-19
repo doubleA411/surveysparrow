@@ -3,7 +3,6 @@
 
 
 .review {
-    margin-top: 8%;
     @include fleX(column);
     align-items: center;
     justify-content: space-evenly;
@@ -64,6 +63,7 @@
         margin: 8%;
         @include fleX(row);
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 150px;
 

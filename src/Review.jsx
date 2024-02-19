@@ -1,11 +1,10 @@
 import React from 'react'
 import { brands } from './config';
 import { medals,faces } from './config';
-import './scss/reviews.scss';
+import './scss/_reviews.scss';
 
-function Review() {
+function Review(props) {
 
-  const isMobile = window.innerWidth <= 768;
   return (
     <div className="review">
       <p className="title">A Quick Peek at the Reviews</p>
@@ -30,7 +29,7 @@ function Review() {
           leads to determine if they are a solid fit, or client on-boarding."
         </p>
       </div>
-      {isMobile ? (
+      {props.isMobile ? (
         <div className="face-mobile">
           <img src={faces[2]} alt="" />
           <p className="name">Alex Healy</p>

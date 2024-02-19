@@ -4,7 +4,7 @@ import arrow from "./assets/arrow-down-1.svg";
 import globe from "./assets/globe.svg";
 import { routes } from "./config";
 
-import './scss/header.scss'
+import './scss/_header.scss'
 
 function Header() {
   return (

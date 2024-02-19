@@ -1,5 +1,5 @@
 import React from 'react'
-import './scss/footer.scss'
+import './scss/_footer.scss'
 import { icons } from './config';
 
 import phone from './assets/phone.svg'

@@ -1,10 +1,10 @@
 import React from 'react'
-import './scss/signup-card.scss';
+import './scss/_signup-card.scss';
 import { cta } from './config';
 
-function SignUpCard() {
+function SignUpCard(props) {
   return (
-    <div className='signup-card'>
+    <div className={`${props.bottom ? "signup-card-2" : "signup-card"}`}>
       <p className='text'>Get me Started With the Best Voice of Customer Software</p>
       
         <div className="cta">
